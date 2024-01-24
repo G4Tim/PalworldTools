@@ -5,8 +5,10 @@
 咋用捏:<br>
 1. 确保安装 Python 3 (最小版本 Python 3.5, 推荐使用 Python 3.12).
 2. 确保 *Dic_EN-CN.txt* 字典文件与 *iniEditor_CN.py* 在同一目录
-3. 运行 *iniEditor_CN.py*, 点击 <加载> 以进行编辑 .ini 文件.[fig](Editor-CN_0.1.png)
+3. 运行 *iniEditor_CN.py*, 点击 <加载> 以进行编辑 .ini 文件.[fig](pics\Editor-CN_0.1.png)
 4. 点击 <保存> 以保存配置文件.
+
+tips: 若服务器不便于操作建议本地编辑后上传，考虑后续制作网页版
 
 *palserver.ps1* 是一个用于在 Windows 系统上部署幻兽帕鲁服务器的 PowerShell 脚本。<br>
 *VC+DX.ps1* 是一个用于安装运行幻兽帕鲁服务器所需的 VC++ Runtime 和 DirectX® Runtime 的 PowerShell 脚本。<br>

@@ -4,7 +4,7 @@
 
 How to use:<br>
 1. Ensure Python 3 is installed (minimum Python 3.5, recommended Python 3.12).
-2. Run *iniEditor.py*, click <Load Settings> to load and edit .ini files.[fig](Editor_0.1.png)
+2. Run *iniEditor.py*, click <Load Settings> to load and edit .ini files.[fig](pics\Editor_0.1.png)
 3. After making the desired changes, click the 'Save' button to save your modifications to the specified file.
 
 *palserver.ps1* is a PowerShell script designed to assist in deploying a Palworld server on Windows.<br>
