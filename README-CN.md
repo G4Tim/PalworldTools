@@ -1,3 +1,5 @@
+*iniEditor.py* 稍后更新中文版编辑器
+
 *palserver.ps1* 是一个用于在 Windows 系统上部署幻兽帕鲁服务器的 PowerShell 脚本。<br>
 *VC+DX.ps1* 是一个用于安装运行幻兽帕鲁服务器所需的 VC++ Runtime 和 DirectX® Runtime 的 PowerShell 脚本。<br>
 

@@ -61,7 +61,7 @@ def bind_to_mousewheel(widget):
     widget.bind("<MouseWheel>", on_mousewheel)
 
 app = tk.Tk()
-app.title("Game Configuration Editor")
+app.title("Palworld ini Editor")
 
 settings_vars = {}
 
