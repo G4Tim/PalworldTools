@@ -1,19 +1,20 @@
-[中文说明](README-CN.md)<br>
+[English](README-EN.md)<br>
 
-*iniEditor.py* is a Python script providing a user interface to assist in editing Palworld .ini files.<br>
+*iniEditor.py* 一个完全中文的幻兽帕鲁配置文件编辑器<br>
 
-How to use:<br>
-1. Ensure Python 3 is installed (minimum Python 3.5, recommended Python 3.12).
-2. Run *iniEditor.py*, click <Load Settings> to load and edit .ini files.[fig](Editor_0.1.png)
-3. Click <Save> to apply the changes.
+咋用捏:<br>
+1. 确保安装 Python 3 (最小版本 Python 3.5, 推荐使用 Python 3.12).
+2. 确保 *Dic_EN-CN.txt* 字典文件与 *iniEditor.py* 在同一目录
+3. 运行 *iniEditor.py*, 点击 <加载> 以进行编辑 .ini 文件.[fig](Editor-CN_0.1.png)
+4. 点击 <保存> 以保存配置文件.
 
-*palserver.ps1* is a PowerShell script designed to assist in deploying a Palworld server on Windows.<br>
-*VC+DX.ps1* is another PowerShell script that facilitates the installation of the "Visual C++ Redistributable Packages" and "Microsoft DirectX® End-User Runtime," both required dependencies for the Palworld server.<br>
+*palserver.ps1* 是一个用于在 Windows 系统上部署幻兽帕鲁服务器的 PowerShell 脚本。<br>
+*VC+DX.ps1* 是一个用于安装运行幻兽帕鲁服务器所需的 VC++ Runtime 和 DirectX® Runtime 的 PowerShell 脚本。<br>
 
-How to use:<br>
-1. Open PowerShell and execute *palserver.ps1*.<br>
-   1.1 Use the "&" symbol before the path to *palserver.ps1* to run the script.<br>
-2. After completing the server installation, try running PalServer.exe.<br>
-   2.1 The default location of PalServer.exe is "C:\palworld\PalServer.exe".<br>
-3. If you encounter an error related to VC++ or DirectX, execute *VC+DX.ps1*.<br>
-4. You should now be able to run the Palworld server.<br>
+咋用捏：<br>
+1. 打开 PowerShell 并执行 *palserver.ps1*。<br>
+   1.1 在 *palserver.ps1* 的路径前使用 "&" 符号。<br>
+2. 安装完成后尝试运行 PalServer.exe。<br>
+   2.1 PalServer.exe 的默认路径是 "C:\palworld\PalServer.exe"。<br>
+3. 如果出现关于 VC++ 或 DirectX 的错误，请执行 *VC+DX.ps1*。<br>
+4. 现在，你应该能够正常运行服务器了。<br>
