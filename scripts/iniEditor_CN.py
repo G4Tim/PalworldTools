@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter import ttk, filedialog
 import re
 
+
 def load_translation_file(filepath):
     translation = {}
     with open(filepath, 'r', encoding='utf-8') as file:
@@ -11,9 +12,30 @@ def load_translation_file(filepath):
     return translation
 
 
-# Load translation file
-translation = load_translation_file(
-    'scripts/Dic_EN-CN.txt')
+def load_translation_file(paths):
+    # Iterate over each path in the list
+    for path in paths:
+        try:
+            with open(path, 'r', encoding='utf-8') as file:
+                return file.read()
+        except FileNotFoundError:
+            continue
+    # Raise an error if file is not found in any of the paths
+    raise FileNotFoundError(
+        "Translation file not found in any of the provided paths.")
+
+
+# Define a list of possible file paths
+file_paths = [
+    '/scripts/Dic_EN-CN.txt',
+    'C:/PalworldTools/PalworldTools-main/scripts/Dic_EN-CN.txt'
+]
+
+# Attempt to load the translation file
+try:
+    translation = load_translation_file(file_paths)
+except FileNotFoundError as e:
+    print(e)
 
 
 def open_file():
