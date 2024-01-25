@@ -1,4 +1,7 @@
-﻿chcp 65001 > $null
+﻿# Set the current directory to the directory where the script is located
+Set-Location -Path $PSScriptRoot
+
+chcp 65001 > $null
 
 # Clear the screen
 Clear-Host

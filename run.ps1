@@ -22,9 +22,13 @@ if (-not (Test-Path $extract_folder)) {
 Write-Host "Extracting files..."
 Expand-Archive -Path $zip_file -DestinationPath $extract_folder
 
+# Change directory to PalworldTools-main
+$main_script_path = Join-Path -Path $extract_folder -ChildPath "PalworldTools-main"
+Set-Location -Path $main_script_path
+
 # Run main.ps1
-Write-Host "Running main.ps1..."
-& "$extract_folder\PalworldTools-main\main.ps1"
+Write-Host "Running main.ps1 in $main_script_path..."
+& ".\main.ps1"
 
 Write-Host "Done."
 Pause
