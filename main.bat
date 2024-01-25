@@ -1,3 +1,4 @@
+chcp 936
 @echo off
 cls
 
