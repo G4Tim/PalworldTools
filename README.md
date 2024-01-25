@@ -1,22 +1,22 @@
 [English](README-EN.md)<br>
 
-*iniEditor_CN.py* 一个完全中文的幻兽帕鲁配置文件编辑器<br>
+本项目脚本使用于 Windows 系统，用于部署幻兽帕鲁服务器，并提供可视化配置文件编辑工具。<br>
 
-咋用捏:<br>
-1. 确保安装 Python 3 (最小版本 Python 3.5, 推荐使用 Python 3.12).
-2. 确保 *Dic_EN-CN.txt* 字典文件与 *iniEditor_CN.py* 在同一目录
-3. 运行 *iniEditor_CN.py*, 点击 <加载> 以进行编辑 .ini 文件.[fig](pics\Editor-CN_0.1.png)
-4. 点击 <保存> 以保存配置文件.
 
-tips: 若服务器不便于操作建议本地编辑后上传，考虑后续制作网页版
 
-*palserver.ps1* 是一个用于在 Windows 系统上部署幻兽帕鲁服务器的 PowerShell 脚本。<br>
-*VC+DX.ps1* 是一个用于安装运行幻兽帕鲁服务器所需的 VC++ Runtime 和 DirectX® Runtime 的 PowerShell 脚本。<br>
+##### 1. 下载或克隆<br>
 
-咋用捏：<br>
-1. 打开 PowerShell 并执行 *palserver.ps1*。<br>
-   1.1 在 *palserver.ps1* 的路径前使用 "&" 符号。<br>
-2. 安装完成后尝试运行 PalServer.exe。<br>
-   2.1 PalServer.exe 的默认路径是 "C:\palworld\PalServer.exe"。<br>
-3. 如果出现关于 VC++ 或 DirectX 的错误，请执行 *VC+DX.ps1*。<br>
-4. 现在，你应该能够正常运行服务器了。<br>
+PowerShell: `Invoke-WebRequest -Uri <br>"https://codeload.github.com/G4Tim/PalworldTools/zip/refs/heads/main" -OutFile "C:\PalworldTools.zip"`<br>
+
+命令提示符: `curl -o "C:\PalworldTools.zip" "https://codeload.github.com/G4Tim/PalworldTools/zip/refs/heads/main"`<br>
+
+Git: `cd C:\ && git clone https://github.com/G4Tim/PalworldTools.git`<br>
+
+##### 2.解压并部署
+
+双击运行 *main.bat* 根据需求选择选项，通过键入选项<数字>与<回车>确认。
+
+[选择界面](pics/main.pngmain)
+
+[编辑器界面](pics/Editor-CN_0.1.png)
+

@@ -37,9 +37,4 @@ if %errorlevel% neq 0 (
 echo Installation complete. Waiting for 3 seconds...
 timeout /t 3 /nobreak > NUL
 
-:RunScript
-:: Run iniEditor_CN.py
-echo Running iniEditor_CN.py...
-python iniEditor_CN.py
-
 echo Done.

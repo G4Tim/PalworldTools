@@ -13,7 +13,7 @@ def load_translation_file(filepath):
 
 # Load translation file
 translation = load_translation_file(
-    'Dic_EN-CN.txt')
+    'scripts/Dic_EN-CN.txt')
 
 
 def open_file():
