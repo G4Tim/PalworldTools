@@ -1,11 +1,10 @@
-chcp 936
 @echo off
 cls
 
 :MainMenu
 echo Please select your language:
 echo 1. English
-echo 2. ÖÐÎÄ
+echo 2. ä¸­æ–‡
 echo 0. Exit
 echo.
 
@@ -38,15 +37,15 @@ if %OPTION%==4 python scripts\iniEditor.py
 goto EnglishMenu
 
 :ChineseMenu
-echo ÄúÒÑÑ¡ÔñÖÐÎÄ¡£
-echo 1. °²×°»ÃÊÞÅÁÂ³·þÎñÆ÷
-echo 2. °²×°·þÎñÆ÷ÒÀÀµVC++ºÍDirectX
-echo 3. °²×°python»·¾³ £¨±à¼­Æ÷ÐèÒª£©
-echo 4. ÔËÐÐÅäÖÃÎÄ¼þ±à¼­Æ÷
-echo 0. ÍË³ö
+echo æ‚¨å·²é€‰æ‹©ä¸­æ–‡ã€‚
+echo 1. å®‰è£…å¹»å…½å¸•é²æœåŠ¡å™¨
+echo 2. å®‰è£…æœåŠ¡å™¨ä¾èµ–VC++å’ŒDirectX
+echo 3. å®‰è£…pythonçŽ¯å¢ƒ ï¼ˆç¼–è¾‘å™¨éœ€è¦ï¼‰
+echo 4. è¿è¡Œé…ç½®æ–‡ä»¶ç¼–è¾‘å™¨
+echo 0. é€€å‡º
 echo.
 
-choice /C 12340 /N /M "ÇëÊäÈëÄúµÄÑ¡Ôñ: "
+choice /C 12340 /N /M "è¯·è¾“å…¥æ‚¨çš„é€‰æ‹©: "
 set OPTION=%ERRORLEVEL%
 
 if %OPTION%==5 goto MainMenu

@@ -3,13 +3,12 @@
 :: Set Python download URL and installer file name
 set PYTHON_URL=https://www.python.org/ftp/python/3.12.1/python-3.12.1-amd64.exe
 set PYTHON_INSTALLER=python_installer.exe
-set PYTHON_PATH=C:\Program Files\Python312
 
 :: Check if Python is already installed
-python --version > NUL 2>&1
+python --version
 if %errorlevel% equ 0 (
     echo Python is already installed.
-    goto CheckPath
+    goto PostInstall
 )
 
 :: Download Python installer
@@ -20,18 +19,11 @@ powershell -Command "Invoke-WebRequest -Uri %PYTHON_URL% -OutFile %PYTHON_INSTAL
 echo Installing Python...
 start /wait %PYTHON_INSTALLER% /quiet InstallAllUsers=1 PrependPath=1 Include_test=0
 
-:: Check if Python installation was successful
-python --version
-if %errorlevel% neq 0 (
-    echo Python installation failed.
-    exit /b %errorlevel%
-)
+echo Python installation script has completed.
+echo Please reopen command prompt to check Python installation.
+exit
 
-:CheckPath
-:: Check if Python is in Path and add if not
-echo Checking Python Path...
-setx path "%path%;%PYTHON_PATH%" /M
-
+:PostInstall
 :: Check and install tkinter if needed
 python -m tkinter
 if %errorlevel% neq 0 (
