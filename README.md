@@ -16,7 +16,7 @@ Git: `cd C:\ && git clone https://github.com/G4Tim/PalworldTools.git`<br>
 
 双击运行 *main.bat* 根据需求选择选项，通过键入选项<数字>与<回车>确认。
 
-[选择界面](pics/main.pngmain)
+[选择界面](pics/main.png)
 
 [编辑器界面](pics/Editor-CN_0.1.png)
 
