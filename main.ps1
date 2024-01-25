@@ -1,3 +1,5 @@
+chcp 65001 > $null
+
 # Clear the screen
 Clear-Host
 

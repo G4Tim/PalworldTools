@@ -1,34 +1,33 @@
 # Enable delayed expansion
-Set-StrictMode -Version 2.0
+Set-Local EnableDelayedExpansion
 
-# Define download link and target folder
-$downloadUrl = "https://codeload.github.com/G4Tim/PalworldTools/zip/refs/heads/main"
-$zipFile = "C:\PalworldTools.zip"
-$extractFolder = "C:\PalworldTools"
+# Define download URL and target folder
+$download_url = "https://codeload.github.com/G4Tim/PalworldTools/zip/refs/heads/main"
+$zip_file = "C:\PalworldTools.zip"
+$extract_folder = "C:\PalworldTools"
 
-# Downloading zip file using Invoke-WebRequest
+# Download zip file using Invoke-WebRequest
 Write-Host "Downloading PalworldTools..."
-Invoke-WebRequest -Uri $downloadUrl -OutFile $zipFile
+Invoke-WebRequest -Uri $download_url -OutFile $zip_file
 
-# Check if zip file was successfully downloaded
-if (-Not (Test-Path $zipFile)) {
+# Check if the zip file was successfully downloaded
+if (-not (Test-Path $zip_file)) {
     Write-Host "Error: Download failed."
     exit
 }
 
-# Create target folder for extraction if it doesn't exist
-if (-Not (Test-Path $extractFolder)) {
-    New-Item -ItemType Directory -Path $extractFolder
+# Create extraction target folder if it does not exist
+if (-not (Test-Path $extract_folder)) {
+    New-Item -Path $extract_folder -ItemType Directory
 }
 
-# Extracting files
+# Extract zip file
 Write-Host "Extracting files..."
-Expand-Archive -Path $zipFile -DestinationPath $extractFolder
+Expand-Archive -Path $zip_file -DestinationPath $extract_folder
 
-# Running main.bat
-Write-Host "Running main.bat..."
-& "$extractFolder\PalworldTools-main\main.bat"
+# Run main.ps1
+Write-Host "Running main.ps1..."
+& "$extract_folder\PalworldTools-main\main.ps1"
 
-# End of script
 Write-Host "Done."
-Read-Host -Prompt "Press Enter to exit"
+Pause
