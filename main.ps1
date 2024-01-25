@@ -1,4 +1,4 @@
-chcp 65001 > $null
+﻿chcp 65001 > $null
 
 # Clear the screen
 Clear-Host

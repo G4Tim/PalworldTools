@@ -1,6 +1,3 @@
-# Enable delayed expansion
-Set-Local EnableDelayedExpansion
-
 # Define download URL and target folder
 $download_url = "https://codeload.github.com/G4Tim/PalworldTools/zip/refs/heads/main"
 $zip_file = "C:\PalworldTools.zip"
